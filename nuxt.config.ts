@@ -16,7 +16,8 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      strapiUrl: 'http://localhost:1331',
+      //@ts-ignore
+      strapiUrl: process.env.STRAPI_BASE_URL,
     },
   },
 })
